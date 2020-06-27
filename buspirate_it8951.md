@@ -121,7 +121,7 @@ The hardware information blob is 40 bytes and is composed of the following infor
 
 This excerpt of code from our Rust driver shows how to interpret this blob of bytes :
 
-```
+```Rust 
 let s = structure!(">HHHH16S16S");
 let input = self.read_bytes(40);
 
